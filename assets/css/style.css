@@ -1,0 +1,224 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Muli:300);
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+code {
+  font-size: 80%;
+}
+/* Global Page Settings */
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+}
+/* Navbar */
+.navbar {
+  background: #7B0500;
+  border-width: 0px;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #FFF;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #FFF;
+}
+/* Page Parts */
+#hero {
+  padding-top: 120px;
+  padding-bottom: 40px;
+  background: url('http://perrysstores.com/wp-content/uploads/2012/11/ExampleHomePic.jpg') center center no-repeat;
+  background-size: cover;
+  height: 440px;
+  background-position-y: -550px;
+  color: #FFF;
+}
+#hero h1,
+#hero h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+#hero input {
+  color: white;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  border-color: white;
+  height: 49px;
+  width: 100%;
+}
+#hero input:focus {
+  border: 1px solid #c1c1c1;
+  background: #f1f1f1;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline-color: #06192e;
+}
+#hero .form-control {
+  margin-top: 20px;
+  height: 42px;
+}
+#hero .btn-link {
+  margin-top: 10px;
+  border-radius: 6px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
+  background: #00767b;
+  color: #fff!important;
+  padding: .8125em;
+  border: 1px solid #00767b;
+  display: inline-block;
+}
+#hero .btn-link:active,
+#hero .btn-link:visited {
+  transition: all 175ms ease-in;
+  box-shadow: none;
+}
+#hero .btn-link:focus,
+#hero .btn-link:hover {
+  background: #00767b;
+}
+#hero .box {
+  background: rgba(0, 0, 0, 0.6);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#hero .box .input {
+  width: 200px;
+}
+#about {
+  background: #f1f1f1;
+}
+#discover a {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+}
+#discover a:hover {
+  opacity: 0.5;
+}
+.bar-wrapper {
+  background: #00767b;
+  color: #f1f1f1;
+  padding: 20px;
+}
+#newsletter {
+  background: url('http://thehappyhourfinder.com/static/img/dotted.png') repeat;
+  padding-bottom: 60px;
+}
+#newsletter input {
+  color: white;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  border-color: white;
+  height: 49px;
+  width: 100%;
+}
+#newsletter input:focus {
+  border: 1px solid #c1c1c1;
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline-color: #06192e;
+}
+#newsletter .form-control {
+  margin-top: 20px;
+  height: 72px;
+  width: 992px !important;
+}
+#newsletter .btn-link {
+  font-size: 1.6em;
+  margin-top: 10px;
+  border-radius: 6px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
+  background: #00767b;
+  color: #fff!important;
+  padding: .8125em;
+  border: 1px solid #00767b;
+  display: inline-block;
+}
+#newsletter .btn-link:active,
+#newsletter .btn-link:visited {
+  transition: all 175ms ease-in;
+  box-shadow: none;
+}
+#newsletter .btn-link:focus,
+#newsletter .btn-link:hover {
+  background: #00767b;
+}
+.blog-wrap {
+  border: 1px dashed #00767b;
+  padding: 10px;
+}
+.blog-wrap h3 {
+  border-bottom: 1px solid #00767b;
+  padding-bottom: 5px;
+}
+.btn-link {
+  margin-top: 10px;
+  border-radius: 6px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
+  background: #00767b;
+  color: #fff!important;
+  padding: .8125em;
+  border: 1px solid #00767b;
+  display: inline-block;
+}
+.btn-link:active,
+.btn-link:visited {
+  transition: all 175ms ease-in;
+  box-shadow: none;
+}
+.btn-link:focus,
+.btn-link:hover {
+  background: #00767b;
+}
+/* Happy Hours Page */
+#discovery {
+  padding-top: 80px;
+  background: url('../img/map.png');
+  background-size: cover;
+}
+#discovery .input-group-btn {
+  display: inline;
+}
+.result {
+  padding: 10px;
+  border: 1px dashed #00767b;
+  margin-bottom: 10px;
+}
