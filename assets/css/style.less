@@ -2,7 +2,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Muli:300);
 
-
+@color1: #7B0500;
 @color2: #00767b;
 
 
@@ -14,15 +14,17 @@ html {
 }
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 60px;
+    margin-bottom: 220px;
 }
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 60px;
-    background-color: #f5f5f5;
+    height: 240px;
+    background-color: @color1;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -54,6 +56,11 @@ h1, h2, h3, h4 {
   font-family: 'Muli', sans-serif; font-weight: 300;
 }
 
+ul, li { list-style-type: none; padding: 0px;}
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid @color2;
+    margin: 10px 0; padding: 0; }
 
 /* Navbar */
 
@@ -144,10 +151,24 @@ a {
    transition: opacity .25s ease-in-out;
    -moz-transition: opacity .25s ease-in-out;
    -webkit-transition: opacity .25s ease-in-out;
+   -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
    }
 
    a:hover {
-      opacity: 0.5;
+       opacity: .7;
+    -webkit-transform: scale(1.05,1.07);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.05,1.07);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    position: relative;
+    z-index: 99;
       }
 }
 .bar-wrapper {
@@ -256,19 +277,102 @@ input:focus {
   margin-bottom: 10px;
 }
 
+#locals {
+  background: #000;
+}
 
 
+#mobile {
+  background: #f1f1f1;
+
+  .phone-img {
+    padding-top: 100px;
+  }
+}
 
 
+.footer {
+  color: #fff;
+  hr {
+    width: 40%;
+  }
+  ul {
+    padding: 2px;
+  }
+  .img-thumbnail {
+    background-color: transparent;
+    border: none;
+  }
+  .input {
+      color: white;
+      margin-right: 5px;
+      margin-bottom: 10px;
+      border-color: white;
+      height: 39px;
+      padding:0 10px;
+      font-size: 14px;
+      line-height: 25px;
+      border: 1px solid #e1e1e1;
+      box-shadow: none;
+      background: none;
+      vertical-align: middle;
+      border-width: 2px;
+  }
+
+}
+
+#blog-list-hero {
+    padding-top: 150px;
+    background: url('http://theebeerbook.files.wordpress.com/2011/03/anaheim-brewery-03082011-025-sepia1.jpg');
+    background-size: cover;
+    height: 300px;
+}
+
+.blog-wrapper {
+  border: 1px solid @color2;
+}
 
 
+#blog-content {
+  margin-top: 80px;
+}
 
+#bar-result {
+  .result {
+    background: #f5f5f5;
+  }
+  padding-top: 80px;
+  margin-top: 20px;
 
+  li {
+    padding: 5px 0px;
+  }
 
+  .single-day {
+    background: #FFF;
+    padding: 20px;
+  }
+}
 
-
-
-
+#contact {
+  padding-top: 180px;
+    input {
+      color: white;
+      margin-right: 5px;
+      margin-bottom: 10px;
+      border-color: white;
+      height: 39px;
+      padding:0 10px;
+      font-size: 14px;
+      line-height: 25px;
+      border: 1px solid #e1e1e1;
+      box-shadow: none;
+      background: none;
+      vertical-align: middle;
+      border-width: 2px;
+      width: 80%;
+  }
+}
 
 
 

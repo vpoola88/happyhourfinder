@@ -1,5 +1,42 @@
-    <div class="footer">
-      <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
-      </div>
-    </div>
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">
+				<h4>Menu</h4>
+				<hr>
+				<ul>
+					<li>link</li>
+					<li>link</li>
+					<li>link</li>
+					<li>link</li>
+				</ul>
+			</div>
+			<div class="col-sm-2">
+				<h4>Mobile</h4>
+				<hr>
+				<ul>
+					<li>link</li>
+					<li>link</li>
+					<li>link</li>
+					<li>link</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-4 text-center">
+				<img class="img-thumbnail" src="{{relative}}/assets/img/logo2.png">
+			</div>
+
+			<div class="col-sm-3 col-sm-offset-1">
+				<h4>Newsletter</h4>
+				<hr>
+				<form class="subscribeForm ng-pristine ng-valid" action="http://162.242.147.250/sendy/subscribe" method="POST" accept-charset="utf-8">
+
+					<input type="text" name="name" class="width100 input" placeholder="Enter your name" required=""><br>
+					<input type="text" name="email" class="width100 input" placeholder="hello@example.com" required="">
+					<input type="hidden" name="list" value="3nZHMZ1lNSxqfcBBIWRzNQ">
+					<div class="clear"><input type="submit" value="SUBSCRIBE" name="submit" id="submit" class="btn btn-link"></div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
