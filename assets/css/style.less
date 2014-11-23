@@ -15,6 +15,9 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 220px;
+    @media (max-width: 767px) {
+      margin-bottom: 580px;
+    }
 }
 .footer {
     position: absolute;
@@ -22,6 +25,9 @@ body {
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 240px;
+      @media(max-width: 767px){
+        height: 590px;
+      }
     background-color: @color1;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -85,6 +91,12 @@ hr { display: block; height: 1px;
     height: 440px;
     background-position-y: -550px;
     h1,h2 { font-family: 'Montserrat', sans-serif; font-weight: 400;}
+
+    @media(max-width: 1500px){
+      background-position: inherit;
+      background-size: cover;
+      height: inherit;
+    }
 
     input {
   color: white;
@@ -175,6 +187,11 @@ a {
     background: rgba(0,118,123, 1.0);
     color: #f1f1f1;
     padding: 20px;
+    margin-bottom: 15px;
+
+    @media(max-width: 767px) {
+      margin: 15px;
+    }
 }
 
 

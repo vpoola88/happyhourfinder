@@ -8,12 +8,26 @@
 
 
     <script>
-    $(document).ready(function() {
+  $(document).ready(function() {
  
-  $("#owl-example").owlCarousel();
+  $("#owl-example").owlCarousel({
+ 
+    // Most important owl features
+    items : 6,
+    itemsCustom : false,
+    itemsDesktop : [1199,6],
+    itemsDesktopSmall : [980,6],
+    itemsTablet: [768,1],
+    itemsTabletSmall: false,
+    itemsMobile : [479,1],
+    singleItem : false,
+    itemsScaleUp : false,
+    autoPlay: true,
+    slideSpeed: 2,
+});
  
 });
-</script>
+  </script>
 
   </body>
 </html>
