@@ -6,172 +6,345 @@ layout: default
     <div id="content" class="container">
         <div class="row">
             <h1 class="text-center">Discovery Local Happy Hours</h1>
-            <form class="form-inline col-sm-12 text-center" role="form">
-                <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Place Name (e.g. 1st Street Bar, Saloon)">
-                </div>
-                <div class="form-group">
+            <form class="form-inline" role="form">
+                <div class="form-group col-xs-12 col-md-12">
                     <div class="input-group">
-                        <input class="form-control" type="email" placeholder="Near (Address, City, State, Zip)">
+                        <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                        <div class="input-group-addon"><i class="fa fa-search"></i></div>
+                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Select Day <span class="caret"></span></button>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Monday</a></li>
-                          <li><a href="#">Tuesday</a></li>
-                          <li><a href="#">Wednesday</a></li>
-                          <li><a href="#">Thursday</a></li>
-                          <li><a href="#">Friday</a></li>
-                          <li><a href="#">Saturday</a></li>
-                          <li><a href="#">Sunday</a></li>
-
-                        </ul>
-                      </div><!-- /btn-group -->
-                </div>
-                <button type="submit" class="btn btn-default">Search</button>
             </form>
         </div>
     </div>
 </section>
 
-<section id="results">
+<div id="city-seo">
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 col-xs-12">
-                <h3>Happy Hours Near San Diego, California</h3>
-                <a href="bar.html">
-                    <div class="single-result">
-                        <div class="result">
-                            <div class="row">
-                                <div class="col-sm-2 col-sm-offset-1">
-                                    <img src="{{ relative }}/assets/img/beer.png" class="img-responsive">
-                                </div>
-                                <div class="col-sm-9">
-                                    <h4>Time Out Sports Tavern</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                
-                <div class="single-result">
-                    <div class="result">
-                        <div class="row">
-                            <div class="col-sm-2 col-sm-offset-1">
-                                <img src="{{ relative }}/assets/img/beer.png" class="img-responsive">
-                            </div>
-                            <div class="col-sm-9">
-                                <h4>Time Out Sports Tavern</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-result">
-                    <div class="result">
-                        <div class="row">
-                            <div class="col-sm-2 col-sm-offset-1">
-                                <img src="{{ relative }}/assets/img/beer.png" class="img-responsive">
-                            </div>
-                            <div class="col-sm-9">
-                                <h4>Time Out Sports Tavern</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-result">
-                    <div class="result">
-                        <div class="row">
-                            <div class="col-sm-2 col-sm-offset-1">
-                                <img src="{{ relative }}/assets/img/beer.png" class="img-responsive">
-                            </div>
-                            <div class="col-sm-9">
-                                <h4>Time Out Sports Tavern</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-result">
-                    <div class="result">
-                        <div class="row">
-                            <div class="col-sm-2 col-sm-offset-1">
-                                <img src="{{ relative }}/assets/img/beer.png" class="img-responsive">
-                            </div>
-                            <div class="col-sm-9">
-                                <h4>Time Out Sports Tavern</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-result">
-                    <div class="result">
-                        <div class="row">
-                            <div class="col-sm-2 col-sm-offset-1">
-                                <img src="{{ relative }}/assets/img/beer.png" class="img-responsive">
-                            </div>
-                            <div class="col-sm-9">
-                                <h4>Time Out Sports Tavern</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-4">
-                <h3>Newly Updated</h3>
-                <div class="single-result">
-                    <div class="result">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <img src="{{ relative }}/assets/img/beer.png" class="img-thumbnail">
-                            </div>
-                            <div class="col-sm-8">
-                                <h4>Time Out Sports Tavern</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-result">
-                    <div class="result">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <img src="{{ relative }}/assets/img/beer.png" class="img-thumbnail">
-                            </div>
-                            <div class="col-sm-8">
-                                <h4>Time Out Sports Tavern</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-result">
-                    <div class="result">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <img src="{{ relative }}/assets/img/beer.png" class="img-thumbnail">
-                            </div>
-                            <div class="col-sm-8">
-                                <h4>Time Out Sports Tavern</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-xs-12">
+                <h3 class="text-center">City Title</h3>
+                <p>Put city tagline here based on ISP for SEO ranks. We dont need the user to allow location to pull this data (i believe). This should be based on your isp. I feel like filler content here will help with SEO for keywords in different areas (like LA happy hours, or NYC happy hours). Refer to email.
+                </p>
             </div>
         </div>
     </div>
-</section>
+</div>
+
+<div id="mobile-nav">
+    <div class="container">
+        <hr>
+
+            <div class="local-nav" role="tabpanel">
+                <div class="row">
+                    <ul id="myTab" class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Happy Hours</a></li>
+                        <li role="presentation" class=""><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">Blogs</a></li>
+                        <li role="presentation" class=""><a href="#dropdown1" id="dropdown1-tab" role="tab" data-toggle="tab" aria-controls="dropdown1" aria-expanded="false">Newest</a></li>
+                    </ul>
+                </div>
+            <div id="myTabContent" class="tab-content">
+                <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+                    <div id="results">
+                            <div class="row">
+                                <div class="col-sm-8 col-xs-12">
+                                    <h3 class="text-center">Near San Diego</h3>
+                                    <div id="happyhours" class="owl-carousel">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a href="bar.html">
+                                                    <div class="single-result">
+                                                        <div class="result">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="box">
+                                                                        <h4>Time Out Sports Tavern</h4>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="bar.html">
+                                                    <div class="single-result2">
+                                                        <div class="result">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="box">
+                                                                        <h4>El Dorado Cocktail Lounge</h4>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="bar.html">
+                                                    <div class="single-result3">
+                                                        <div class="result">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="box">
+                                                                        <h4>Stout Public House</h4>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                                            <div class="row">
+                                            <div class="col-xs-12">
+                                                <a href="bar.html">
+                                                    <div class="single-result4">
+                                                        <div class="result">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="box">
+                                                                        <h4>Double Deuce</h4>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="bar.html">
+                                                    <div class="single-result5">
+                                                        <div class="result">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="box">
+                                                                        <h4>Urban Bar and Grill</h4>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="bar.html">
+                                                    <div class="single-result6">
+                                                        <div class="result">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="box">
+                                                                        <h4>The Tipsy Crow</h4>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>                    
+                        </div>
+                    </div>
+
+
+
+
+                    <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+                     <div id="blog-list">
+                            <h3 class="text-center">Local Blogs, San Diego</h3>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="blog-wrap">
+                                        <h2>Blog Title</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum....
+                                        </p>
+                                        <a href="blog.html" class="btn btn-link">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="blog-wrap">
+                                        <h2>Blog Title</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum....
+                                        </p>
+                                        <a href="blog.html" class="btn btn-link">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+
+                <div role="tabpanel" class="tab-pane fade" id="dropdown1" aria-labelledby="dropdown1-tab">
+                    <div id="results">
+                            <div class="row">
+                                <div class="col-sm-8 col-xs-12">
+                                    <h3 class="text-center">Newest San Diego</h3>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a href="bar.html">
+                                                    <div class="single-result">
+                                                        <div class="result">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="box">
+                                                                        <h4>Time Out Sports Tavern</h4>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="bar.html">
+                                                    <div class="single-result2">
+                                                        <div class="result">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="box">
+                                                                        <h4>El Dorado Cocktail Lounge</h4>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="bar.html">
+                                                    <div class="single-result3">
+                                                        <div class="result">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="box">
+                                                                        <h4>Stout Public House</h4>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                                            <div class="row">
+                                            <div class="col-xs-12">
+                                                <a href="bar.html">
+                                                    <div class="single-result4">
+                                                        <div class="result">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="box">
+                                                                        <h4>Double Deuce</h4>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="bar.html">
+                                                    <div class="single-result5">
+                                                        <div class="result">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="box">
+                                                                        <h4>Urban Bar and Grill</h4>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="bar.html">
+                                                    <div class="single-result6">
+                                                        <div class="result">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="box">
+                                                                        <h4>The Tipsy Crow</h4>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<br>

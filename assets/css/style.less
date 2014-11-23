@@ -62,12 +62,19 @@ h1, h2, h3, h4 {
   font-family: 'Muli', sans-serif; font-weight: 300;
 }
 
+@media(max-width: 767px){
+  h1 { font-size: 26px;}
+}
+
 ul, li { list-style-type: none; padding: 0px;}
 
 hr { display: block; height: 1px;
     border: 0; border-top: 1px solid @color2;
     margin: 10px 0; padding: 0; }
 
+.input-group-addon {
+  background-color: #FFF;
+}
 /* Navbar */
 
 .navbar{
@@ -90,54 +97,57 @@ hr { display: block; height: 1px;
     background-size: cover;
     height: 440px;
     background-position-y: -550px;
-    h1,h2 { font-family: 'Montserrat', sans-serif; font-weight: 400;}
+    // h1,h2 { font-family: 'Montserrat', sans-serif; font-weight: 400;}
 
     @media(max-width: 1500px){
       background-position: inherit;
       background-size: cover;
       height: inherit;
+      padding-top: 50px;
+      padding-bottom: 0px;
+
     }
 
-    input {
-  color: white;
-  margin-right: 5px;
-  margin-bottom: 10px;
-  border-color: white;
-  height: 49px;
-  width: 100%;
-}
-input:focus {
-  border: 1px solid #c1c1c1;
-  background: #f1f1f1;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  outline-color: #06192e;
-}
-.form-control {
-  margin-top: 20px;
-  height: 42px;
-}
+//     input {
+//   color: white;
+//   margin-right: 5px;
+//   margin-bottom: 10px;
+//   border-color: white;
+//   height: 49px;
+//   width: 100%;
+// }
+// input:focus {
+//   border: 1px solid #c1c1c1;
+//   background: #f1f1f1;
+//   -webkit-box-shadow: none;
+//   -moz-box-shadow: none;
+//   box-shadow: none;
+//   outline-color: #06192e;
+// }
+// .form-control {
+//   margin-top: 20px;
+//   height: 42px;
+// }
 
-.btn-link {
-  margin-top: 10px;
-  border-radius: 6px;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
-  background: @color2;
-  color: #fff!important;
-  padding: .8125em;
-  border: 1px solid @color2;
-  display: inline-block;
-}
-.btn-link:active,
-.btn-link:visited {
-  transition: all 175ms ease-in;
-  box-shadow: none;
-}
-.btn-link:focus,
-.btn-link:hover {
-  background: @color2;
-}
+// .btn-link {
+//   margin-top: 10px;
+//   border-radius: 6px;
+//   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
+//   background: @color2;
+//   color: #fff!important;
+//   padding: .8125em;
+//   border: 1px solid @color2;
+//   display: inline-block;
+// }
+// .btn-link:active,
+// .btn-link:visited {
+//   transition: all 175ms ease-in;
+//   box-shadow: none;
+// }
+// .btn-link:focus,
+// .btn-link:hover {
+//   background: @color2;
+// }
 
     color: #FFF;
 
@@ -292,6 +302,9 @@ input:focus {
   padding: 10px;
   border: 1px dashed @color2;
   margin-bottom: 10px;
+  a {
+    color: #FFF;
+  }
 }
 
 #locals {
@@ -300,10 +313,19 @@ input:focus {
 
 
 #mobile {
-  background: #f1f1f1;
+  background: @color1;
+  color: #FFF;
 
   .phone-img {
     padding-top: 100px;
+    @media(max-width:767px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .jumbotron {
+    color: #000;
   }
 }
 
@@ -343,6 +365,7 @@ input:focus {
     background: url('http://theebeerbook.files.wordpress.com/2011/03/anaheim-brewery-03082011-025-sepia1.jpg');
     background-size: cover;
     height: 300px;
+    color: #FFF;
 }
 
 .blog-wrapper {
@@ -389,6 +412,64 @@ input:focus {
       border-width: 2px;
       width: 80%;
   }
+}
+
+#results {
+
+  .box {
+        background: rgba(0,0,0,0.4);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+  .single-result {
+    background: url('http://s3-media3.fl.yelpcdn.com/bphoto/3Xns1AEH-Kr7cdfW_4og2g/l.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  .result {
+    color: #FFF;
+  }
+
+   .single-result2 {
+    background: url('http://s3-media1.fl.yelpcdn.com/bphoto/zUHAxbi2xKxQvoOEqWBBSg/l.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  .result {
+    color: #FFF;
+  }
+
+  .single-result3 {
+    background: url('http://s3-media4.fl.yelpcdn.com/bphoto/D6GrtDDd_BRiYZ6eTAftdg/l.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  .result {
+    color: #FFF;
+  }
+
+  .single-result4 {
+    background: url('http://s3-media4.fl.yelpcdn.com/bphoto/tWX8DfFXLqW_NDvTVnbBbg/l.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  .result {
+    color: #FFF;
+  }
+
+  .single-result5 {
+    background: url('http://s3-media2.fl.yelpcdn.com/bphoto/1b__HVg8jHCuKCCB-ctu6g/l.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  .result {
+    color: #FFF;
+  }
+
+  .single-result6 {
+    background: url('http://s3-media2.fl.yelpcdn.com/bphoto/qV_unPSXexC5umUMVSvO9Q/l.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  .result {
+    color: #FFF;
+  }
+
 }
 
 

@@ -57,37 +57,39 @@
     </div>
 
 	<section id="hero">
-    <div class="container">
-        <div class="row text-center">
-            <div class="box">
-                <h1>HAPPY HOUR FINDER</h1>
-                <form class="form-inline" role="form">
-                    <div class="form-group">
-                        <div class="input-group">
-
-                            <input class="form-control" type="email" placeholder="Enter Nearby Zipcode">
-                        </div>
+    <div id="content" class="container">
+        <div class="row box">
+            <h1 class="text-center">Discovery Happy Hours</h1>
+            <form class="form-inline" role="form">
+                <div class="form-group col-xs-12 col-md-12">
+                    <div class="input-group">
+                        <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                        <div class="input-group-addon"><i class="fa fa-search"></i></div>
+                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
                     </div>
-                    <button type="submit" class="btn btn-link"><i class="fa fa-search"></i></button>
-                </form>
-                <br>
-                <p>BECAUSE IT'S ALWAYS HAPPY HOUR SOMEWHERE</p>
-            </div>
+                </div>
+            </form>
+            <p class="text-center">Because its always happy hour somewhere</p>
         </div>
     </div>
+
 </section>
 
 <section id="mobile">
     <div class="container">
+            <div class="row">
+            <h2 class="text-center">The App</h2>
+        </div>
         <div class="row">
             
-                <div class="col-sm-5">
+                <div class="col-sm-5 col-xs-12">
                     <div class="phone-img">
                     <img src="/assets/img/phone.jpg" class="img-responsive">
                 </div>
             </div>
-            <div class="col-sm-7">
+            <div class="col-sm-7 col-xs-12">
                 <img src="/assets/img/logo2.png" class="img-responsive">
+                <br>
                 <div class="jumbotron">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -493,6 +495,29 @@
  
 });
   </script>
+
+   <script>
+  $(document).ready(function() {
+ 
+  $("#happyhours").owlCarousel({
+ 
+    // Most important owl features
+    items : 1,
+    itemsCustom : false,
+    itemsDesktop : [1199,1],
+    itemsDesktopSmall : [980,1],
+    itemsTablet: [768,1],
+    itemsTabletSmall: false,
+    itemsMobile : [479,1],
+    singleItem : false,
+    itemsScaleUp : false,
+    autoPlay: true,
+    slideSpeed: 2,
+});
+ 
+});
+  </script>
+
 
   </body>
 </html>
